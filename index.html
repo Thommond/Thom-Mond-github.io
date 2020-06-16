@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <main>
 
-      <header>
+      <header id='topOfPage'><!-- TODO: Make the background image be a picture of me near nature -->
+
+        <h1>Thom Mondeaux<h1>
+
+          <p>A focused and determined, Student Software Engineer </p>
 
         <nav>
 
           <ul>
 
-            <li><a href="index.html">Interests</a></li><!-- TODO: Make a sticky header which takes people around
-            the page -->
-            <li><a href="projects.html">My Work</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#topOfPage">Interests</a></li><!-- TODO: Make a sticky header which takes people around the page -->
+            <li> <a href="#contact">Contact</a></li>
+            <li><a href='#resume'>My Works</a></li>
 
           </ul>
 
@@ -27,9 +31,7 @@
 
     <article>
 
-      <section id='interests'>
-
-        <h1>Welcome to My website!</h1>
+      <section id='interests'><!-- TODO: Make so background image slowly fades into colored pattern. -->
 
         <h2>About Me</h2>
 
@@ -37,19 +39,19 @@
         student at Thaddeus Stevens in Pennsylvannia. </p>
 
         <p>I have experience in JavaScript building a video game and digging into
-        <a href="#">Eloquent JavaScript</a>. I have some deep rooted projects with Python
+        <a href="https://eloquentjavascript.net/">Eloquent JavaScript</a>. I have some deep rooted projects with Python
         and especially Flask. I have hands on expreience with databases MySQL and SQL specifacally
         SQlite and Postgress. I tackled Git version control, Html5 and CSS3 earlier on and
         never let go. I am currently dabbling in React, Node.js and Express.js. If you want to see my
-        head on over to my <a href="#">Github profile</a>.</p>
+        head on over to my <a href="https://github.com/Thommond">Github profile</a>.</p>
 
         <h3>Hobbies<h3>
 
           <div id="hobby">
 
-        <img src="" alt="">
+        <img src="" alt=""><!-- TODO: Related simple pictures to each activiy -->
 
-        <p>I love to relax and dive into a good book.</p>
+        <p>I love to relax and dive into a good book. Checkout my <a href="#">good reads</a>.</p><!-- TODO: Link up to book recommendation site. -->
 
         <img src="" alt="">
 
@@ -57,7 +59,7 @@
 
         <img src="" alt="">
 
-        <p>I peak my interest by improving my <a href="#">social media site on github</a>.</p>
+        <p>I peak my interest by improving my social media site on github.</p>
 
 
           </div>
@@ -74,16 +76,59 @@
 
       </section>
 
-      <!-- TODO: Add a short iframe for my resume -->
 
-      <section>
 
-        <h2>Contact Me</h2><!-- TODO: Make Email contact form -->
+      <section id='theWorks' >
+
+        <h2 id='resume'>My Works</h2>
+
+        <h4>Maze Game Deluxe</h4>
+
+        <p>I have worked on a variety of projects, however I have enjoyed two the most. I worked with a JavaScript
+        Maze Game in my first semester of college and it was difficult, but the hardwork paid off with a functioning video game.
+        In Maze Game Deluxe you can play through 11 mazes that increase in difficulty as you go up. You are a little square mover
+        that at all costs do not hit the wall and make it to the gold finish line. When you complete the game you get a cool wall
+        paper. <a href="#">Check it out Maze Game on github</a>, or <a href="#">on the actual deployed site</a>.</p> <!-- TODO: Link to github -->
+
+        <h4>TSCT-Portal</h4>
+
+        <p>Thaddeus Stevens portal remake was the largest project of my freshman year at college it brought a great challenge, but
+        the skill's gained like remote team work, git branch work flow, and my personal gain of being devops of the group. The challenge
+        of the project was to recreate the <a href="#">Thaddeus Stevens College Portal</a> into our own version to learn how to develop
+        Web Apps. <a href="#">Checkout out my groups portal recreation on github</a>, or <a href="#">the actual deployment of the project</a>.</p>
+
+        <p>If you would like to see the code of any other project such as my proffesional website, flask-Todo and Python adventure game
+        then here is my <a href="#">general github profile</a>.</p>
+
+        <h3>My Resume</h3>
+
+
+        <iframe src="" width="600px" height="600px"></iframe>
+
+      </section>
+
+
+
+
+
+      <section id='contactForm'>
+
+        <h2 id='contact'>Contact Me</h2><!-- TODO: Make sure form actually emails me -->
 
         <form action="index.html" method="post">
-          <label for="Email">
-            <input type="text" name="Email" value="">
+
+          <label for="Email">Email:
+            <input type="text" name="email" value="">
           </label>
+
+          <label for="name">Name:
+            <input type="text" name="name" value="">
+          </label>
+
+          <label for="subject">Subject:
+          <textarea name="subject" rows="8" cols="80"></textarea>
+          </label>
+
         </form>
 
       </section>
@@ -92,7 +137,7 @@
 
     <footer>
 
-      <p>Quote Here</p><!-- TODO: Add my favorite quote -->
+      <p>"By failing to prepare, you are preparing to fail" - Benjamin Franklin</p>
 
     </footer>
 

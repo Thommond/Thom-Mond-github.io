@@ -1,1 +1,58 @@
-/* TODO: Add scheme style */
+/**
+General Starting styles
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: black;
+  font-size: 16pt;
+}
+
+/**
+Layout
+*/
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+footer {
+  background: white;
+  display:flex;
+  flex-direction: column;
+  border-bottom: 3px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: url();
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 3px solid black;
+  margin: 10px;
+}
