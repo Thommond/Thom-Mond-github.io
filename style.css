@@ -13,6 +13,11 @@ html {
 body {
   background: black;
   font-size: 16pt;
+  font-family: Raleway;
+}
+
+h1, h2, h3, h4 {
+  font-family: Be vietnam;
 }
 
 /**
@@ -37,6 +42,10 @@ footer {
   align-items: center;
 }
 
+
+/**
+Header Related layout styles
+*/
 header {
   background-image: url();
   border-bottom: 3px solid black;
@@ -47,19 +56,24 @@ header {
   align-items: center;
 }
 
-/* Style the header */
+header p {
+  font-size: 17pt;
+}
+
+
+
 .header {
+  width: 100%;
   padding: 10px 16px;
   background: #555;
   color: #f1f1f1;
 }
 
-/* Page content */
 .content {
   padding: 16px;
 }
 
-.sticky {
+.sticky { /*Making header sticky on scroll*/
   position: fixed;
   top: 0;
   width: 100%;
@@ -68,9 +82,26 @@ header {
   flex-direction: column;
 }
 
+
+/*Below for shrinking ability*/
+.stickyNavUpdate {
+  display: flex;
+  flex-direction: row;
+}
+
+.stickyUlUpdate {
+  flex-direction: row;
+  font-size: 19pt;
+  padding:5px;
+}
+
 .sticky + .content {
   padding-top: 102px;
 }
+
+/**
+End of header styles
+*/
 
 section {
   display: flex;
