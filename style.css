@@ -66,29 +66,36 @@ footer {
   border: 3px solid white;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
 
 /**
 Header Related layout styles
 */
 header {
+  align-content:left;
   background-image: url();
-  border-bottom: 3px solid black;
   display: flex;
   flex-direction: column;
   background: white;
-  justify-content: center;
-  align-items: center;
+  align-items:left;
 }
 
 header p {
   font-size: 17pt;
+  border-bottom: 3px solid black;
+  width: 570px;
 }
 
 
 .header {
-  width: 100%;
+  width: 600px;
   padding: 10px 16px;
   background: #555;
   color: #f1f1f1;
@@ -113,6 +120,9 @@ header p {
   margin-top: -20px;
 }
 
+.sticky div p {
+  border-bottom: none;
+}
 /*Below for shrinking ability*/
 
 
@@ -146,6 +156,13 @@ End of header styles
   height: 38px;
 }
 
+li {
+  padding: 5px;
+}
+
+label {
+  padding: 20px;
+}
 section {
   display: flex;
   justify-content: center;
