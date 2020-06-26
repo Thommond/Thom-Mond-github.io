@@ -2,24 +2,30 @@
 // Main function
 window.onscroll = () => {stickHeader()};
 
-// Get the header
-var header = document.getElementById("theHeader");
+// Get needed elements from document
+let header = document.getElementById("theHeader")
+let nav = document.getElementById("theNav");
+
 
 // Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Adds the sticky header class when offset is not start
+const sticky = header.offsetTop;
 
 stickHeader = () => {
 
   if (window.pageYOffset > sticky) {
 
+    //Removes stick updates when at top of page Yoffset
     header.classList.add("sticky");
+    nav.classList.add("stickyUlUpdate");
+
 }
-// Sticks to page if offset is not start
+
    else {
 
+    //Updates header to have "sticky styles on scroll"
     header.classList.remove("sticky");
+    nav.classList.remove("stickyUlUpdate");
+
   }
 
 }
