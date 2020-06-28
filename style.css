@@ -20,13 +20,20 @@ h1, h2, h3, h4 {
   font-family: Be vietnam;
 }
 
+h2 {
+  border-bottom: 5px solid black;
+}
 /**
 Layout
 */
 
 a {
 text-decoration: none;
-color:white;
+color:black;
+}
+
+header a {
+  color: white;
 }
 
 header a:hover {
@@ -59,6 +66,30 @@ a:hover {
   color: black;
 }
 
+.socialContainer {
+  flex-direction: row;
+  margin: 1rem;
+}
+
+#iconCredit a {
+  color: black;
+}
+
+#iconCredit a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+#hobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #555;
+}
+
+
 footer {
   position: relative;
   background: white;
@@ -81,7 +112,7 @@ Header Related layout styles
 */
 header {
   background-size: 1900px;
-  height: 800px;
+  height: 650px;
   width: 100%;
   align-content:left;
   background-image:url(images/canyon.jpeg);
@@ -182,7 +213,6 @@ label {
 }
 
 section {
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +223,13 @@ section {
   margin: 10px;
 }
 
+#welcome p {
+  width: 750px;
+}
+
+#theWorks p {
+  width: 800px;
+}
 
 .paraxell {
   margin: auto;
@@ -209,6 +246,17 @@ section {
 .hobbyPic {
   width: 100px;
   height: 100px;
+
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+}
+
+.social:hover {
+padding: 5px;
+transition: padding, ease 0.3s;
 
 }
 
