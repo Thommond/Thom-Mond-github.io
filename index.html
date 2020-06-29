@@ -166,23 +166,27 @@
 
     <section id='contactForm'>
 
-      <h2 id='contact'>Contact Me</h2><!-- TODO: Make sure form actually emails me -->
+      <h2 id='contact'>Contact Me</h2>
 
-      <form action="index.html" method="post">
+      <form action="" method="post" onsubmit="sendEmailMessage();">
 
         <label for="Email">Email:
-          <input type="text" name="email" value="">
+          <input type="text" name="email" id='email' value="">
         </label>
 
         <label for="name">Name:
-          <input type="text" name="name" value="">
+          <input type="text" id='name' name="name" value="">
         </label>
 
-        <label for="subject">Subject:
-        <textarea name="subject" rows="8" cols="80"></textarea>
+        <label for="body">Email Content:
+          <textarea name="subject" id='message' rows="8" cols="80"></textarea>
         </label>
+
+        <input type="submit" name="submitButton" value="Contact me">
 
       </form>
+
+      <span id="sucessMessage"></span>
 
     </section>
 

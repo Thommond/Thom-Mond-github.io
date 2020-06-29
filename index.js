@@ -13,7 +13,7 @@ let a = document.createElement("a");
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
 
-stickHeader = () => {
+let stickHeader = () => {
 
   if (window.pageYOffset > sticky) {
 
@@ -41,3 +41,18 @@ stickHeader = () => {
   }
 
 }
+
+let sendEmail = () => {
+        let name=$('#name').val();
+        let email=$('#email').val();
+        let message=$('#message').val();
+        $.post("send_mail.php",'name='+name+'&email='+email'&message='+message,function(result,status,xhr) {
+                if( status.toLowerCase()=="error".toLowerCase() )
+                { alert("An Error Occurred.."); }
+                else {
+                    //alert(result);
+                    $('#sucessMessage').html(result);
+                }
+            })
+            .fail(function(){ alert("something went wrong. Please try again") });
+    }
