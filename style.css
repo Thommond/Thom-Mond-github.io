@@ -90,7 +90,7 @@ a:hover {
 }
 
 #background {
-background-image: url(images/welcome.jpeg);
+background-image: url(images/welcome.jpg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -98,7 +98,7 @@ opacity: 0.
 }
 
 #background2 {
-background-image: url(images/canyonBig.jpeg);
+background-image: url(images/canyonBig.jpg);
 }
 
 #background3 {
@@ -107,15 +107,15 @@ background-image: url(images/maze.png);
 }
 
 #background4 {
-background-image:url(images/python.jpeg);
+background-image:url(images/coding.jpg);
 }
 
 #background5 {
-background-image: url(images/contact.jpeg);
+background-image: url(images/contact.jpg);
 }
 
 #background6 {
-background-image: url(images/canyonBig.jpeg);
+background-image: url(images/canyonBig.jpg);
 }
 
 footer {
@@ -144,7 +144,7 @@ header {
   height: 650px;
   width: 100%;
   align-content:left;
-  background-image:url(images/canyon.jpeg);
+  background-image:url(images/header.jpg);
   display: flex;
   margin:auto;
   z-index: 1;
