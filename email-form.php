@@ -1,36 +1,37 @@
 <?php
-if(!isset($_POST['submit']))
+
+$errors = ;
+
+if(isset($_POST['submit']))
 {
 	//This page should not be accessed directly. Users need to submit the form.
-	echo "error; you need to submit the form!";
-}
 
 //Getting form submissions
 $name = $_POST['name'];
 $visitors_email = $_POST['email'];
 $message = $_POST['message'];
 
-// Validate forms first
-if(empty($name)||empty($visitors_email))
+//Validating
+if(empty($name)|| empty($visitors_email)|| empty($message))
 {
-    echo "Name and email are mandatory!";
-    exit;
+	$errors .= "\n Error: all fields are required";
+	exit;
 }
 
 // Checking for injections
 if(checkInjected($visitors_email))
 {
-    echo "Bad email value!";
+    $errors .= "Bad email value!";
     exit;
 }
 
 // Defining email components
-$email_from = $visitors_email;
-$email_subject = "Email from your website.";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+$my_email = 'Thommond@protonmail.com';
+$email_from = 'Your proffessional website.';
+$email_subject = "Contact form submission: $name";
+$email_body = "Here is the message:\n $message".
 
-$to = "Thommond@protonmail.com";
+$to = $my_email;
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitors_email \r\n";
 
@@ -63,5 +64,7 @@ function checkInjected($str)
     {
     return false;
   }
+}
+
 }
 ?>
