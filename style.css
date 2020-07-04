@@ -67,9 +67,11 @@ a:hover {
 }
 
 .socialContainer {
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
+
 
 #iconCredit a {
   color: black;

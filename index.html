@@ -170,33 +170,26 @@
 
       <form action="email-form.php" method="post">
 
-        <div class="input-box">
+
           <label for="Email">Email:
             <input type="email" name="email" id='email' value="">
           </label>
+
           <label for="name">Name:
             <input type="text" id='name' name="name" value="">
           </label>
-        </div>
 
-        <div class=”input-sub”>
-          <label for="subject">Subject:
-            <input type="text" name="subject" id='subject' value="">
-          </label>
-        </div>
 
-        <div class="">
           <label for="body">Email Content:
             <textarea name="message" id='message' rows="8" cols="80"></textarea>
           </label>
-        </div>
 
-          <div class="submit-btn">
-        <input type="submit" name="submitButton" value="Contact me">
-          </div>
+
+          <input type="submit" name="submit" value="Contact me">
+
       </form>
 
-      <span id="sucessMessage"></span>
+      <span id="successMessage"></span>
 
     </section>
 
@@ -209,14 +202,30 @@
 
     <footer><!--Ending element container with my favorite quote and social links.-->
 
+
+
+      <h3>Connect</h3>
+
       <p>"By failing to prepare, you are preparing to fail" - Benjamin Franklin</p>
 
-      <h3>Checkout my social media!</h3>
-
       <div class="socialContainer">
-        <a class='socialLinks'href="https://www.linkedin.com/in/thom-mondeaux-84814419b/"><img class='social' src="images/linkedin.png" alt="Linkedin logo"></a>
 
-        <a class='socialLinks' href="https://github.com/Thommond"><img class='social' src="images/github.png" alt="Github logo"></a>
+        <div class="socialInner">
+
+        <img class='social' src="images/linkedin.png" alt="Linkedin logo">
+
+        <a class='socialLinks'href="https://www.linkedin.com/in/thom-mondeaux-84814419b/">https://www.linkedin.com/in/thom-mondeaux-84814419b/</a>
+
+        </div>
+
+        <div class="socialInner">
+
+        <img class='social' src="images/github.png" alt="Github logo">
+
+        <a class='socialLinks' href="https://github.com/Thommond">https://github.com/Thommond</a>
+
+        </div>
+
       </div>
 
 
