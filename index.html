@@ -170,13 +170,22 @@
 
       <form action="email-form.php" method="post">
 
-            <input type="email" name="email" id='email' value="email@example.com">
 
-            <input type="text" id='name' name="name" value="Bob example">
+          <label for="Email">Email:
+            <input type="email" name="email" id='email' value="">
+          </label>
 
-            <textarea name="message" id='message' rows="8" cols="80">Example message</textarea>
+          <label for="name">Name:
+            <input type="text" id='name' name="name" value="">
+          </label>
 
-          <input type="submit" name="submit" id='submit' value="Contact me">
+
+          <label for="body">Email Content:
+            <textarea name="message" id='message' rows="8" cols="80"></textarea>
+          </label>
+
+
+          <input type="submit" name="submit" value="Contact me">
 
       </form>
 
