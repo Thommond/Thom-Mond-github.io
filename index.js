@@ -13,7 +13,7 @@ let a = document.createElement("a");
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
 
-stickHeader = () => {
+let stickHeader = () => {
 
   if (window.pageYOffset > sticky) {
 

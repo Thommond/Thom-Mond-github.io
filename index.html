@@ -166,23 +166,30 @@
 
     <section id='contactForm'>
 
-      <h2 id='contact'>Contact Me</h2><!-- TODO: Make sure form actually emails me -->
+      <h2 id='contact'>Contact Me</h2>
 
-      <form action="index.html" method="post">
+      <form action="email-form.php" method="post">
 
-        <label for="Email">Email:
-          <input type="text" name="email" value="">
-        </label>
 
-        <label for="name">Name:
-          <input type="text" name="name" value="">
-        </label>
+          <label for="Email">Email:
+            <input type="email" name="email" id='email' value="">
+          </label>
 
-        <label for="subject">Subject:
-        <textarea name="subject" rows="8" cols="80"></textarea>
-        </label>
+          <label for="name">Name:
+            <input type="text" id='name' name="name" value="">
+          </label>
+
+
+          <label for="body">Email Content:
+            <textarea name="message" id='message' rows="8" cols="80"></textarea>
+          </label>
+
+
+          <input type="submit" name="submit" value="Contact me">
 
       </form>
+
+      <span id="successMessage"></span>
 
     </section>
 
@@ -195,14 +202,30 @@
 
     <footer><!--Ending element container with my favorite quote and social links.-->
 
+
+
+      <h3>Connect</h3>
+
       <p>"By failing to prepare, you are preparing to fail" - Benjamin Franklin</p>
 
-      <h3>Checkout my social media!</h3>
-
       <div class="socialContainer">
-        <a class='socialLinks'href="https://www.linkedin.com/in/thom-mondeaux-84814419b/"><img class='social' src="images/linkedin.png" alt="Linkedin logo"></a>
 
-        <a class='socialLinks' href="https://github.com/Thommond"><img class='social' src="images/github.png" alt="Github logo"></a>
+        <div class="socialInner">
+
+        <img class='social' src="images/linkedin.png" alt="Linkedin logo">
+
+        <a class='socialLinks'href="https://www.linkedin.com/in/thom-mondeaux-84814419b/">https://www.linkedin.com/in/thom-mondeaux-84814419b/</a>
+
+        </div>
+
+        <div class="socialInner">
+
+        <img class='social' src="images/github.png" alt="Github logo">
+
+        <a class='socialLinks' href="https://github.com/Thommond">https://github.com/Thommond</a>
+
+        </div>
+
       </div>
 
 
