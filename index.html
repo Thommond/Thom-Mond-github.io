@@ -33,13 +33,11 @@
           <nav><!--Sticky header with navigation bar-->
 
             <ul id='theNav'>
-
+              <li> <a href="#welcome">Profile</a> </li>
               <li><a href='#theWorks'>My Work</a></li>
               <li><a href="#interests">Interests</a></li>
               <li> <a href="#resume">Resume</a></li>
               <li><a href="#contact">Contact</a></li>
-
-
             </ul>
 
           </nav>
@@ -62,21 +60,25 @@
 
         <section id='welcome'>
 
-          <h2>Profile</h2>
+          <div class="heading-container">
+            <h2>Profile</h2>
+            <p class='quotes'>"Freedom is the right to tell people
+        what they do not want to hear" - George Orwell</p>
+          </div>
 
           <div class="firstContainWelcome">
 
-            <img id='profileImage' src="images/Job_image.jpeg" alt="image of me">
+            <img id='profileImage' src="images/text-images/Job_image.jpeg" alt="image of me">
 
             <section class="welcomeContainer">
 
               <ul>
 
-                <li><h4>Name:</h4></li>
+                <li> <h4>Name:</h4> </li>
                 <li>Thom J Mondeaux</li>
-                <li><h4>Age:</h4></li>
+                <li> <h4>Age:</h4> </li>
                 <li>I am 18 years old and a Sophmore in College.</li>
-                <li><h4>Location:</h4></li>
+                <li> <h4>Location:</h4> </li>
                 <li>I was born in Lancaster, PA and Live and operate in Columbia, PA</li>
 
               </ul>
@@ -107,13 +109,16 @@
 
           <section id='theWorks'><!--Discussing my previous projects completed in college and side projects-->
 
-            <h2 >My Works</h2>
+            <div class="heading-container">
+              <h2 >My Works</h2>
+              <p class='quotes'>"The time to repair the roof is
+                when the sun is shining" - John F. Kennedy</p>
+            </div>
 
             <h4>Maze Game Deluxe</h4>
 
-            <img class='projectImages' src="" alt=""><!-- TODO: Image of gameplay of mazeGame -->
-
-            <p>I have worked on a variety of projects, however I have enjoyed two the most. I worked with a JavaScript
+            <p><img class='projectImages' src="images/text-images/maze.png" alt="game play of maze game deluxe">
+              I have worked on a variety of projects, however I have enjoyed two the most. I worked with a JavaScript
               Maze Game in my first semester of college and it was difficult, but the hardwork paid off with a functioning video game.
               In Maze Game Deluxe you can play through 11 mazes that increase in difficulty as you go up. You are a little square mover
               that at all costs do not hit the wall and make it to the gold finish line. When you complete the game you get a cool wall
@@ -121,9 +126,10 @@
 
             <h4>TSCT-Portal</h4>
 
-            <img class='projectImages' src="images/maze.png" alt="game play of maze game deluxe"><!-- TODO: Image of tsct-portal login page -->
 
-            <p>Thaddeus Stevens portal remake was the largest project of my freshman year at college it brought a great challenge, but
+
+            <p><img class='projectImages' src="images/text-images/login.png" alt="login page of tsct-portal remake">
+              Thaddeus Stevens portal remake was the largest project of my freshman year at college it brought a great challenge, but
               the skill's gained like remote team work, git branch work flow, and my personal gain of being devops of the group. The challenge
               of the project was to recreate the <a href="#">Thaddeus Stevens College Portal</a> into our own version to learn how to develop
               Web Apps. <a href="#">Checkout out my groups portal recreation on github</a>, or <a href="#">the actual deployment of the project</a>.</p>
@@ -140,7 +146,10 @@
 
           <section id='resume'><!--Resume iframe section-->
 
-            <h2>My Resume</h2>
+            <div class="heading-container">
+              <h2>My Resume</h2>
+              <p class='quotes'>"By failing to prepare, you are preparing to fail" - Benjamin Franklin</p>
+            </div>
 
             <iframe src="docs/ThomswebsiteResume.pdf" width="600px" height="600px"></iframe>
 
@@ -155,37 +164,59 @@
 
         <section id='interests'>
 
-          <h2>More About me</h2>
+          <div class="heading-container">
+            <h2>More About me</h2>
+            <p class='quotes'>"Success consists of going from failure
+          to failure without loss of enthusiasm." - Winston Churchill</p>
+          </div>
 
-          <section id="hobby" class='aboutMore'>
+          <div id='interestCtn'>
 
-            <h3>Hobbies</h3>
+            <section  id='facts' class='aboutMore'>
 
-            <img class='hobbyPic' src="images/book.png" alt="A black square with three lines on the right side to indicate pages, mostly like a cartoon."><!-- TODO: Related simple pictures to each activiy -->
+              <h3>Facts</h3>
 
-            <p>I love to relax and dive into a good book.</p>
+              <ul>
+                <li>I am a Vegan, but don't judge.</li>
+                <li>I am an Aquarious, if you are into that.</li>
+                <li>I use to be a welder, but got into tech.</li>
+                <li>I code with Mac, but love Linux.</li>
+              </ul>
 
-            <img class='hobbyPic' src="images/backpack.png" alt="A green backpack with straps on each side and a large front pocket">
+            </section>
 
-            <p>I enjoy the simple nature life, like hiking and backpacking.</p>
+            <section id="hobby" class='aboutMore'>
 
-            <img class='hobbyPic' src="images/pgadmin.jpeg" alt="A large group of rectangles with text in each rectangle">
+              <h3>Hobbies</h3>
 
-            <p>I peak my interest by improving my social media site on github.</p>
+              <img class='hobbyPic' src="images/text-images/book.png" alt="A black square with three lines on the right side to indicate pages, mostly like a cartoon."><!-- TODO: Related simple pictures to each activiy -->
 
-          </section>
+              <p>I love to relax and dive into a good book.</p>
 
-          <section class='aboutMore'>
+              <img class='hobbyPic' src="images/text-images/backpack.png" alt="A green backpack with straps on each side and a large front pocket">
 
-            <h3>Favorites</h3>
+              <p>I enjoy the simple nature life, like hiking and backpacking.</p>
 
-          </section>
+              <img class='hobbyPic' src="images/text-images/pgadmin.jpeg" alt="A large group of rectangles with text in each rectangle">
 
-          <section class='aboutMore'>
+              <p>I peak my interest by improving my social media site on github.</p>
 
-            <h3>Facts</h3>
+            </section>
 
-          </section>
+            <section id='fav' class='aboutMore'>
+
+              <h3>Favorites</h3>
+
+              <ul>
+                <li>My favorite food is Spagghetti.</li>
+                <li>My favorite programming language to work with is Python, but I am open to all.</li>
+                <li>My favorite book is, Brave New World by Alxdous Huxely.</li>
+                <li>My favorite state is New Hampshire, ask me why.</li>
+              </ul>
+
+            </section>
+
+          </div>
 
         </section>
 
@@ -199,29 +230,33 @@
 
         <div class="bigContain">
 
-          <h3>Contact</h3>
+          <div class="heading-container">
+            <h2>Contact</h2>
+            <p class='quotes'>"We are all born ignorant, but one must
+          work hard to remain stupid" - Benjamin Franklin</p>
+          </div>
 
-          <p>"By failing to prepare, you are preparing to fail" - Benjamin Franklin</p>
+
 
           <div class="socialContainer">
 
               <a class='socialLinks' mailto='Thommond@protonmail.com' >
 
-                <img class='social' src="images/mail.png" alt="protonmail icon">
+                <img class='social' src="images/social-logos/mail.png" alt="protonmail icon">
 
                 Thommond@protonmail.com</a>
 
 
               <a class='socialLinks' href="https://www.linkedin.com/in/thom-mondeaux-84814419b/">
 
-                <img class='social' src="images/linkedin.png" alt="Linkedin logo">
+                <img class='social' src="images/social-logos/linkedin.png" alt="Linkedin logo">
 
                 https://www.linkedin.com/in/thom-mondeaux-84814419b/</a>
 
 
               <a class='socialLinks' href="https://github.com/Thommond">
 
-                <img class='social' src="images/github.png" alt="Github logo">
+                <img class='social' src="images/social-logos/github.png" alt="Github logo">
 
                 https://github.com/Thommond</a>
 
