@@ -33,38 +33,14 @@ text-decoration: none;
 color:green;
 }
 
-header a {
-  color: white;
+header p {
+  margin: 1rem;
 }
 
-header a:hover {
-  color:black;
-  padding: 5px;
-  background-color: white;
-  text-decoration: none;
-  border: 2px solid #555;
-}
-
-header a {
-  transition: background-color, border 0.2s ease,
-  padding 0.2s linear;
-  background-color:inherit;
-  border: none;
-}
 
 a:hover {
   color: purple;
   text-decoration: underline;
-}
-
-.sticky a:hover {
-  padding: 10px;
-  background-color: #fbfbfb;
-  border-bottom: 3px solid #555;
-  text-decoration: none;
-  transition: background-color, border-bottom 0.2s ease,
-  padding 0.2s linear;
-  color: black;
 }
 
 .socialContainer {
@@ -83,28 +59,8 @@ a:hover {
 
 .firstContainWelcome {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-
-}
-
-.welcomeContainer {
   flex-direction: column;
-  width: 300px;
-  height: 600px;
   justify-content: center;
-  align-content: left;
-  align-items: flex-start;
-  border-bottom: none;
-  margin: 2rem;
-}
-
-.welcomeContainer:last-child {
-  width: 700px;
-}
-
-.welcomeContainer li, h4, p {
-width: 300px;
 }
 
 .welcomeContainer p {
@@ -137,6 +93,10 @@ width: 300px;
   border-bottom: 2px solid #555;
 }
 
+/**
+ Paraxell scrolling styles
+ */
+
 #background {
 background-image: url(images/paraxell/welcome.jpg);
 background-position: center;
@@ -161,6 +121,22 @@ background-image: url(images/paraxell/canyonBig.jpg);
 background-image: url(images/paraxell/contact.jpg);
 }
 
+.paraxell {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+}
+
+/**
+End of paraxell scrolling styles
+*/
+
 .bigContain {
   display:flex;
   flex-direction: column;
@@ -169,7 +145,7 @@ background-image: url(images/paraxell/contact.jpg);
   align-items: center;
   background: #555;
   width: 1000px;
-  margin: 1rem
+  margin: 1rem;
   height: 600px;
   padding: 1rem;
 }
@@ -209,12 +185,23 @@ form {
 /**
 Header Related layout styles
 */
+
+header a {
+color: black;
+padding: 5px;
+}
+
+header a:hover {
+text-decoration: underline;
+background: white;
+color: black;
+}
+
 header {
   background-size: 1900px;
   height: 650px;
   width: 100%;
   align-content:left;
-  background-image:url(images/paraxell/header.jpg);
   display: flex;
   margin:auto;
   z-index: 1;
@@ -222,20 +209,13 @@ header {
   flex-direction: column;
 }
 
-header p {
-  font-size: 17pt;
-  border-bottom: 3px solid black;
-  width: 570px;
-}
-
-
 .header {
-  width: 600px;
   height: 100%;
   padding: 10px 16px;
   background: #555;
   background-color:rgba(120,120,120,0.7);
   color: #f1f1f1;
+  top: 0;
 }
 
 .header ul {
@@ -247,26 +227,40 @@ header p {
   padding: 16px;
 }
 
-/*Making header 'sticky' on scroll*/
+/**
+Making header 'sticky' on scroll
+*/
 .sticky {
   background-image: none;
   background-color:rgba(120,120,120,1);
   position: fixed;
-  top: 0;
   width: 100%;
-  height: 100px;
+  height: 450px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.sticky a:hover {
+  color:black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+.sticky a {
+  background-color:white;
+  border: none;
+  color: black;
 }
 
 .sticky ul {
   padding-top: 5px;
   font-size: 18pt;
 }
+
 .sticky nav {
   background-color: black;
-  margin-left: auto;
-  margin-top: -20px;
+  width: 700px;
+  height: auto;
 }
 
 .sticky div p {
@@ -276,13 +270,18 @@ header p {
 .stickyUlUpdate {
   display: flex;
   flex-direction: row;
-  font-size: 19pt;
-  padding:15px;
+  flex-wrap: wrap;
+  font-size: 15pt;
+  padding:10px;
+  color: black;
 
 }
 
 .stickyUlUpdate li {
-  padding: 10px;
+  padding: 5px;
+  margin: 5px;
+  background: #fbfbfb;
+  border: 2px solid #555;
 }
 
 .stickyUlUpdate ul:first-child {
@@ -303,30 +302,14 @@ End of header styles
   height: 38px;
 }
 
-
-input, textarea {
-border: 3px solid black;
-margin:1rem;
-}
-
-input {
-  height: 40px;
-}
-
 iframe {
-  width: 1000px;
   margin-bottom: 1rem;
+  width: 300px;
   border: 2px solid #555;
 }
 
-li {
-  padding: 5px;
-}
-
-label {
-  font-style: italic;
-  border-bottom: 1px solid black;
-  padding: 20px;
+p {
+  margin: 10px;
 }
 
 section {
@@ -340,58 +323,230 @@ section {
   margin: 10px;
 }
 
-#welcome p {
-  width: 750px;
-}
-
-#theWorks p {
-  width: 800px;
-}
-
 #interestCtn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-#facts {
-  border-right: 2px solid black;
-}
-
-#fav {
-  border-left: 2px solid black;
-}
 
 #interestCtn section {
   border-bottom: none;
 }
 
-.paraxell {
-  margin: auto;
-  width: 100%;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
+.quotes {
+  color: #fbfbfb;
 }
 
 .heading-container {
   width: 100%;
   background-color: #555;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1rem;
+}
+
+.welcomeContainer {
+  flex-direction: column;
+  width: 300px;
+  height: 600px;
+  justify-content: center;
+  align-content: left;
+  align-items: flex-start;
+  border-bottom: none;
+  margin: 2rem;
+}
+
+.welcomeContainer:last-child {
+  width: 700px;
 }
 
 .hobbyPic {
   width: 50px;
   height: 50px;
-
 }
 
 ul {
   list-style: none;
+}
+
+
+/**
+Responsive styles
+*/
+
+@media only screen and (min-width: 1480px) {
+
+  #theWorks p {
+      width: 800px;
+  }
+
+  iframe {
+    width: 1000px;
+  }
+
+  #welcome p {
+      width: 700px;
+  }
+
+  .firstContainWelcome {
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #interestCtn {
+    flex-direction: row;
+  }
+
+  #facts {
+    border-right: 2px solid black;
+  }
+
+  #fav {
+    border-left: 2px solid black;
+  }
+  /**
+  Media header styles
+  */
+
+  header a:hover {
+    color:black;
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid #555;
+  }
+
+  header a {
+    transition: background-color, border 0.2s ease,
+    padding 0.2s linear;
+    background-color:inherit;
+    border: none;
+    color: white;
+  }
+
+  .header {
+    width: 650px;
+  }
+
+  .sticky a {
+    background: inherit;
+    color: white;
+  }
+
+  .sticky a:hover {
+    padding: 10px;
+    background-color: #fbfbfb;
+    border-bottom: 3px solid #555;
+    text-decoration: none;
+    transition: background-color, border-bottom 0.2s ease,
+    padding 0.2s linear;
+    color: black;
+  }
+
+
+  .sticky {
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+  }
+
+  .sticky nav {
+    background-color: black;
+    margin-left: auto;
+    width: auto;
+    margin-top: -20px;
+  }
+
+  header p {
+    font-size: 17pt;
+    border-bottom: 3px solid black;
+    width: 570px;
+  }
+
+  header {
+    margin: auto;
+    padding: 1rem;
+    background-image:url(images/paraxell/header.jpg);
+  }
+
+  .stickyUlUpdate {
+    display: flex;
+    flex-direction: row;
+    font-size: 19pt;
+    flex-wrap: nowrap;
+    padding:15px;
+
+  }
+
+  .stickyUlUpdate li {
+    padding: 10px;
+    border: none;
+    background: inherit;.stickyUlUpdate {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 15pt;
+      padding:10px;
+      color: black;
+
+    }
+
+    .stickyUlUpdate li {
+      padding: 5px;
+      background: #fbfbfb;
+      border: 2px solid #555;
+    }
+  }
+
+
+  /**
+  End of header media styles
+  */
+
+}
+
+@media only screen and (max-width: 850px) {
+  .projectImages {
+    float: none;
+  }
+
+  iframe {
+    width: 300px;
+  }
+
+  .sticky nav {
+    background-color: black;
+    margin-left: auto;
+    width: auto;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin: 1rem;
+  }
+
+  #slogan {
+    margin: 1rem;
+  }
+
+  .welcomeContainer {
+    border-bottom: none;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .welcomeContainer:last-child {
+    width: auto;
+  }
+
+  .bigContain {
+    width: auto;
+    height: auto;
+  }
+
+
 }
