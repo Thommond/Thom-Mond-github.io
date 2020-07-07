@@ -158,9 +158,6 @@ End of paraxell scrolling styles
   padding: 1rem;
 }
 
-.socialLinks:hover  {
-padding-left: 10px;
-}
 
 .socialLinks img {
  width: 40px;
@@ -235,7 +232,7 @@ Making header 'sticky' on scroll
   background-color:rgba(120,120,120,1);
   position: fixed;
   width: 100%;
-  height: 450px;
+  height: 330px;
   display: flex;
   flex-direction: column;
 }
@@ -398,6 +395,15 @@ Responsive styles
     flex-wrap: wrap;
   }
 
+  .socialLinks {
+    transition: background-color 0.2 ease,
+    padding 0.2s linear;
+  }
+
+  .socialLinks:hover  {
+    background: #555;
+  }
+
   #interestCtn {
     flex-direction: row;
   }
@@ -486,24 +492,15 @@ Responsive styles
   .stickyUlUpdate li {
     padding: 10px;
     border: none;
-    background: inherit;.stickyUlUpdate {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      font-size: 15pt;
-      padding:10px;
-      color: black;
+    background: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15pt;
+    padding:10px;
+    color: black;
 
     }
-
-    .stickyUlUpdate li {
-      padding: 5px;
-      background: #fbfbfb;
-      border: 2px solid #555;
-    }
-  }
-
-
   /**
   End of header media styles
   */
@@ -548,5 +545,15 @@ Responsive styles
     height: auto;
   }
 
+}
+
+@media only screen and (max-width: 550px) {
+
+  .sticky {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
 
 }
