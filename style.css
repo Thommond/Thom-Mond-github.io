@@ -492,19 +492,15 @@ Responsive styles
   .stickyUlUpdate li {
     padding: 10px;
     border: none;
-    background: inherit;.stickyUlUpdate {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      font-size: 15pt;
-      padding:10px;
-      color: black;
+    background: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15pt;
+    padding:10px;
+    color: black;
 
     }
-
-  }
-
-
   /**
   End of header media styles
   */
@@ -548,7 +544,6 @@ Responsive styles
     width: auto;
     height: auto;
   }
-
 
 }
 
