@@ -52,9 +52,8 @@ a:hover {
 .projectImages {
   width: 230px;
   height: 230px;
-  float: left;
-  margin: 1rem;
-  border: 3px solid black;
+  margin: 3px;
+  border: 1px solid black;
 }
 
 .firstContainWelcome {
@@ -365,8 +364,9 @@ ul {
   list-style: none;
 }
 
-tr {
-  border-bottom: 5px solid black;
+ td {
+  border: 5px solid black;
+  padding: 5px;
 }
 
 
@@ -511,10 +511,6 @@ Responsive styles
 
   iframe {
     width: 300px;
-  }
-
-  .projectImages {
-    float: none;
   }
 
 
