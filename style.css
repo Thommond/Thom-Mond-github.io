@@ -33,7 +33,7 @@ text-decoration: none;
 color:green;
 }
 
-header p {
+#topOfPage p {
   margin: 1rem;
 }
 
@@ -100,10 +100,6 @@ a:hover {
 
 #background {
 background-image: url(images/paraxell/welcome.jpg);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-opacity: 0.5
 }
 
 #background2 {
@@ -112,6 +108,7 @@ background-image: url(images/paraxell/canyonBig.jpg);
 
 #background3 {
 background-image:url(images/paraxell/coding.jpg);
+
 }
 
 #background4 {
@@ -212,22 +209,21 @@ form {
 Header Related layout styles
 */
 
-header a {
+#topOfPage a {
 color: black;
 padding: 5px;
 }
 
-header a:hover {
+#topOfPage a:hover {
 text-decoration: underline;
 background: white;
 color: black;
 }
 
-header {
+#topOfPage {
   background-size: 1900px;
   height: 650px;
   width: 100%;
-  align-content:left;
   display: flex;
   margin:auto;
   z-index: 1;
@@ -369,6 +365,10 @@ ul {
   list-style: none;
 }
 
+tr {
+  border-bottom: 5px solid black;
+}
+
 
 /**
 Responsive styles
@@ -418,7 +418,7 @@ Responsive styles
   Media header styles
   */
 
-  header a:hover {
+  #topOfPage a:hover {
     color:black;
     padding: 5px;
     background-color: white;
@@ -426,7 +426,7 @@ Responsive styles
     border: 2px solid #555;
   }
 
-  header a {
+  #topOfPage a {
     transition: background-color, border 0.2s ease,
     padding 0.2s linear;
     background-color:inherit;
@@ -467,15 +467,9 @@ Responsive styles
     margin-top: -20px;
   }
 
-  header p {
+  #topOfPage {
     font-size: 17pt;
     border-bottom: 3px solid black;
-    width: 570px;
-  }
-
-  header {
-    margin: auto;
-    padding: 1rem;
     background-image:url(images/paraxell/header.jpg);
   }
 
@@ -569,5 +563,5 @@ Responsive styles
     height: 100%;
     width: 100%;
   }
-  
+
 }

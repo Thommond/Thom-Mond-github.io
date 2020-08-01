@@ -18,7 +18,7 @@
   <body>
 
 
-      <header id='topOfPage'><!-- TODO: Add large high definition picture of me on top of
+      <div id='topOfPage'><!-- TODO: Add large high definition picture of me on top of
       a mountian (the tallest we climb on our trip.) -->
 
         <div class="header" id='theHeader'>
@@ -45,17 +45,17 @@
 
       </div>
 
-  </header>
+  </div>
 
 
 
   <main>
 
-    <div id='background' class="paraxell">
-
-    </div>
-
     <div class="content">
+
+      <div id='background' class="paraxell">
+
+      </div>
 
       <article>
 
@@ -88,7 +88,7 @@
 
             <section class='welcomeContainer'>
 
-              <p>Hello!, I am Thom Mondeaux, I love sovling problems and Climbing mountians.
+              <p>Hello! I am Thom Mondeaux, I love sovling problems and Climbing mountians.
                  I am a Software Engineering student at Thaddeus Stevens in Pennsylvannia. Looking
                 for spring internship oppertunitys and a chance to grow!</p>
 
@@ -109,35 +109,82 @@
 
           </div>
 
+
+
           <section id='theWorks'><!--Discussing my previous projects completed in college and side projects-->
 
-            <div class="heading-container">
-              <h2 >My Works</h2>
-              <p class='quotes'>"The time to repair the roof is
-                when the sun is shining" - John F. Kennedy</p>
-            </div>
+            <table>
+              <div class="heading-container">
+                <h2 >My Works</h2>
+                <p class='quotes'>"The time to repair the roof is
+                  when the sun is shining" - John F. Kennedy</p>
+              </div>
 
-            <h4>Maze Game Deluxe</h4>
+              <tbody>
 
-            <p><img class='projectImages' src="images/text-images/maze.png" alt="game play of maze game deluxe">
-              I have worked on a variety of projects, however I have enjoyed two the most. I worked with a JavaScript
-              Maze Game in my first semester of college and it was difficult, but the hardwork paid off with a functioning video game.
-              In Maze Game Deluxe you can play through 11 mazes that increase in difficulty as you go up. You are a little square mover
-              that at all costs do not hit the wall and make it to the gold finish line. When you complete the game you get a cool wall
-              paper. <a href="#">Check it out Maze Game on github</a>, or <a href="#">on the actual deployed site</a>.</p>
+                <tr>
+                  <td><h4>TSCT-Portal</h4></td>
+                  <td><img class='projectImages' src="images/text-images/login.png" alt="login page of tsct-portal remake"></td>
+                  <td>
+                      <p>
+                        Thaddeus Stevens portal remake was the largest project of my freshman year at college it brought a great challenge, but
+                        the skill's gained like remote team work, git branch work flow, and my personal gain of being devops of the group. The challenge
+                        of the project was to recreate the <a href="#">Thaddeus Stevens College Portal</a> into our own version to learn how to develop
+                        Web Apps. <a href="https://github.com/Thommond/tsct-portal">Checkout out my groups portal recreation on github</a>, or <a href="#">the actual deployment of the project</a>.
+                      </p>
+                  </td>
+                  <td>Skills: Flask, Python 3.0, SQL/Psycopg/Postgres, CSS, HTML, Git, Heroku, Trello, Github, TravisCI and
+                  remote team work!</td>
+                </tr>
 
-            <h4>TSCT-Portal</h4>
+                <tr>
+                  <td><h4>Maze Game Deluxe</h4></td>
+                  <td><img class='projectImages' src="images/text-images/maze.png" alt="game play of maze game deluxe"></td>
+                  <td>
+                    <p>
+                      I worked with a JavaScript to construct the
+                      Maze Game in my first semester of college and it was difficult, but the hardwork paid off with a functioning video game.
+                      In Maze Game Deluxe you can play through 11 mazes that increase in difficulty as you go up. You are a little square mover
+                      that at all costs do not hit the wall and make it to the gold finish line. When you complete the game you get saved on a list of winners.
+                       <a href="https://github.com/Thommond/Maze-Deluxe">Check it out Maze Game on github</a>, or <a href="#">on the actual deployed site</a>.
+                    </p>
+                  </td>
+                  <td>Skills: JavaScript, Git, CSS, HTML, Github , and partnership.</td>
+                </tr>
 
+                <tr>
+                  <td><h4>Command-Line-War</h4></td>
+                  <td><img class='projectImages' src='images/text-images/command.png' alt='terminal window with green text that reads the first level of the text adventure game.'></td>
+                  <td>
+                    <p>
+                      For my first project with python classes, I constructed the Command-Line-War text adventure game.
+                      The purpose of the game is to make it through all the levels of battle, chance and choice. In the
+                      end you get a congrats message and ta da! <a href="https://github.com/Thommond/Command-line-war">Check it out CommandLineWar on github.</a>
+                    </p>
+                  </td>
+                  <td>Skills: Python 3.0, OOP (Object Oriented Programming), CLI, Git, and Github.</td>
+                </tr>
 
+                <tr>
+                  <td><h4>Flask Todo</h4></td>
+                  <td><img class='projectImages' src='images/text-images/todo.png' alt='show todo text and greating "welcome to simple to do by Thom Mondeaux".'</td>
+                  <td>
+                    <p>
+                      Flask was a fundimental part of my learning of code. During my freshman year of
+                      Thaddeus Stevens the first framework I used was flask which introduced me to web applications
+                      and a whole lot of fun.
+                    </p>
+                  </td>
+                  <td>Skills: Flask, Python 3.0, SQL/Psycopg/Postgress, Git, HTML, CSS, and Github. (I had a lot To Do.)</td>
+                </tr>
 
-            <p><img class='projectImages' src="images/text-images/login.png" alt="login page of tsct-portal remake">
-              Thaddeus Stevens portal remake was the largest project of my freshman year at college it brought a great challenge, but
-              the skill's gained like remote team work, git branch work flow, and my personal gain of being devops of the group. The challenge
-              of the project was to recreate the <a href="#">Thaddeus Stevens College Portal</a> into our own version to learn how to develop
-              Web Apps. <a href="#">Checkout out my groups portal recreation on github</a>, or <a href="#">the actual deployment of the project</a>.</p>
+              </tbody>
+
+            </table>
 
             <p>If you would like to see the code of any other project such as my proffesional website, flask-Todo and Python adventure game
-              then here is my <a href="#">general github profile</a>.</p>
+              then here is my <a href="https://github.com/Thommond?tab=repositories">general github profile. And remember this website is also
+              open source on github! <a href="https://github.com/Thommond/Thom-Mond-github.io">Click here to check out this websites code!</a>.</p>
 
           </section>
 
@@ -222,11 +269,13 @@
 
         </section>
 
+
+
+        <div id='background5' class="paraxell">
+
+        </div>
+
       </main>
-
-      <div id='background5' class="paraxell">
-
-      </div>
 
       <footer id='contact'><!--Ending element container with my favorite quote and social links.-->
 
