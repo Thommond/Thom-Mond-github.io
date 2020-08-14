@@ -2,6 +2,7 @@
 General Starting styles
 */
 
+/* TODO: Make slides style more responsive along with the table styles. */
 html {
   box-sizing: border-box;
 }
@@ -148,7 +149,7 @@ Div container styles
   background: #555;
   width: 1000px;
   margin: 1rem;
-  height: 600px;
+  height: 620px;
   padding: 1rem;
 }
 
@@ -208,6 +209,28 @@ form {
 Header Related layout styles
 */
 
+.travel-slides-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.travel-captions {
+  font-size: 12pt;
+  background: black;
+  padding: 5px;
+  font-weight: bolder;
+  color: white;
+  display: none;
+}
+
+.travel-slides {
+  border: 3px solid white;
+  height: 620px;
+  width: auto;
+  display: none;
+}
+
 #topOfPage a {
 color: black;
 padding: 5px;
@@ -221,19 +244,22 @@ color: black;
 
 #topOfPage {
   background-size: 1900px;
+  background-image: url(images/text-images/coding.jpg);
   height: 650px;
   width: 100%;
   display: flex;
   margin:auto;
   z-index: 1;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
 }
+
+
 
 .header {
   height: 100%;
   padding: 10px 16px;
-  background-color:rgba(120,120,120,0.7);
+  background-color:rgba(120,120,120,0.9);
   color: #f1f1f1;
   top: 0;
 }
@@ -259,6 +285,8 @@ Making header 'sticky' on scroll
   display: flex;
   flex-direction: column;
 }
+
+
 
 .sticky a:hover {
   color:black;
@@ -418,9 +446,17 @@ Responsive styles
   Media header styles
   */
 
+  .travel-slides, .travel-captions {
+    margin-left: 20rem;
+  }
+
+  .travel-slides {
+    width: 700px;
+  }
+
   #topOfPage a:hover {
     color:black;
-    padding: 5px;
+    padding: 2px;
     background-color: white;
     text-decoration: none;
     border: 2px solid #555;
@@ -470,7 +506,6 @@ Responsive styles
   #topOfPage {
     font-size: 17pt;
     border-bottom: 3px solid black;
-    background-image:url(images/paraxell/header.jpg);
   }
 
   .stickyUlUpdate {
@@ -532,6 +567,10 @@ Responsive styles
   .bigContain {
     width: auto;
     height: auto;
+  }
+
+  .travel-slides-ctn {
+    display: none;
   }
 
   .sticky nav {
