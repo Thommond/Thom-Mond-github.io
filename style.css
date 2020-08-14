@@ -148,7 +148,7 @@ Div container styles
   background: #555;
   width: 1000px;
   margin: 1rem;
-  height: 600px;
+  height: 620px;
   padding: 1rem;
 }
 
@@ -227,8 +227,10 @@ color: black;
   margin:auto;
   z-index: 1;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
 }
+
+
 
 .header {
   height: 100%;
@@ -418,6 +420,12 @@ Responsive styles
   Media header styles
   */
 
+  .travel-slides {
+    margin-left: 20rem;
+    height: 647px;
+    display: none;
+  }
+
   #topOfPage a:hover {
     color:black;
     padding: 5px;
@@ -470,7 +478,6 @@ Responsive styles
   #topOfPage {
     font-size: 17pt;
     border-bottom: 3px solid black;
-    background-image:url(images/paraxell/header.jpg);
   }
 
   .stickyUlUpdate {
