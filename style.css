@@ -2,7 +2,6 @@
 General Starting styles
 */
 
-/* TODO: Make slides style more responsive along with the table styles. */
 html {
   box-sizing: border-box;
 }
@@ -13,7 +12,7 @@ html {
 
 body {
   background: black;
-  font-size: 16pt;
+  font-size: 14pt;
   font-family: Raleway;
 }
 
@@ -140,6 +139,7 @@ End of paraxell scrolling styles
 Div container styles
 */
 
+
 .bigContain {
   display:flex;
   flex-direction: column;
@@ -164,8 +164,7 @@ Div container styles
 
 .welcomeContainer {
   flex-direction: column;
-  width: 300px;
-  height: 600px;
+  max-width: 300px;
   justify-content: center;
   align-content: left;
   align-items: flex-start;
@@ -422,6 +421,7 @@ Responsive styles
     flex-wrap: wrap;
   }
 
+
   .socialLinks:hover  {
     background-color: #555;
   }
@@ -544,13 +544,50 @@ Responsive styles
 
 @media only screen and (max-width: 850px) {
 
+  .bigContain {
+    width: auto;
+    height: auto;
+  }
+
   iframe {
     width: 300px;
+  }
+
+  .responsive-td {
+    display: none;
   }
 
 
   #slogan {
     margin: 1rem;
+  }
+
+  .sticky nav {
+    background-color: black;
+    margin-left: auto;
+    width: auto;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin: 1rem;
+  }
+
+  td {
+    border: none;
+    border-bottom: 5px solid black;
+  }
+
+  .travel-slides-ctn, .trave-slides-captions-ctn {
+    display: none;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectImages:hover {
+    border: 3px solid black;
+    opacity: 0.8;
   }
 
   .welcomeContainer {
@@ -562,24 +599,6 @@ Responsive styles
 
   .welcomeContainer:last-child {
     width: auto;
-  }
-
-  .bigContain {
-    width: auto;
-    height: auto;
-  }
-
-  .travel-slides-ctn {
-    display: none;
-  }
-
-  .sticky nav {
-    background-color: black;
-    margin-left: auto;
-    width: auto;
-    flex-wrap: wrap;
-    margin-top: -20px;
-    margin: 1rem;
   }
 
 
@@ -599,4 +618,18 @@ Responsive styles
     width: 100%;
   }
 
+}
+
+/**
+ Media queries for fluid font size
+*/
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (3000 - 300)));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
 }
