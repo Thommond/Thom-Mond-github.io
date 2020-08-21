@@ -164,7 +164,6 @@ Div container styles
 
 .welcomeContainer {
   flex-direction: column;
-  max-width: 300px;
   justify-content: center;
   align-content: left;
   align-items: flex-start;
