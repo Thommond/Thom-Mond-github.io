@@ -20,9 +20,7 @@ let stickHeader = () => {
     // Updates header to have "sticky styles on scroll"
     header.classList.add("sticky");
     nav.classList.add("stickyUlUpdate");
-    // Slides will not display while header is "sticky"
-    slidesCtn.style.display = 'none';
-    captionsCtn.style.display = 'none';
+
 
 }
 
@@ -31,38 +29,7 @@ let stickHeader = () => {
     // Removes stick updates when at top of page Yoffset
     header.classList.remove("sticky");
     nav.classList.remove("stickyUlUpdate");
-    slidesCtn.style.display = 'block';
-    captionsCtn.style.display = 'inline';
-
-
+    
   }
 
-}
-
-
-
-let slideIndex = 0;
-
-travelSlideShow();
-
-function travelSlideShow() {
-
-  let count;
-
-  const captions = document.getElementsByClassName("travel-captions");
-  const slides = document.getElementsByClassName("travel-slides")
-
-  // Loop through images
-  for (count = 0; count < slides.length; count++) {
-    captions[count].style.display = "none";
-    slides[count].style.display = "none";
-  }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {slideIndex = 1}
-
-  slides[slideIndex-1].style.display = "block";
-  captions[slideIndex-1].style.display = "inline";
-  setTimeout(travelSlideShow, 5000); // Change image every 5 seconds
 }

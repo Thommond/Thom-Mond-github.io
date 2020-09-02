@@ -54,6 +54,7 @@ a:hover {
   height: 230px;
   margin: 3px;
   border: 1px solid black;
+  transition:border 3s;
 }
 
 .firstContainWelcome {
@@ -134,6 +135,34 @@ background-image: url(images/paraxell/contact.jpg);
 End of paraxell scrolling styles
 */
 
+/**
+Sandwich menu styles
+*/
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 
 /**
 Div container styles
@@ -185,9 +214,16 @@ Div container styles
   margin: 1rem;
   border: 1px solid black;
   color: black;
-  background: white;
+  background: grey;
   padding: 1rem;
 }
+
+
+.socialLinks:hover  {
+    color: white;
+    text-decoration: none;
+}
+
 
 footer {
   background: white;
@@ -206,38 +242,20 @@ form {
 /**
 Header Related layout styles
 */
-
-.travel-slides-ctn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.travel-captions {
-  font-size: 12pt;
-  background: black;
-  padding: 5px;
-  font-weight: bolder;
-  color: white;
-  display: none;
-}
-
-.travel-slides {
-  border: 3px solid white;
-  height: 620px;
-  width: auto;
-  display: none;
+#topOfPage a:hover {
+  color:black;
+  padding: 2px;
+  background-color: white;
+  text-decoration: none;
+  border: 2px solid #555;
 }
 
 #topOfPage a {
-color: black;
-padding: 5px;
-}
-
-#topOfPage a:hover {
-text-decoration: underline;
-background: white;
-color: black;
+  transition: background-color, border 0.2s ease,
+  padding 0.2s linear;
+  background-color:inherit;
+  border: none;
+  color: white;
 }
 
 #topOfPage {
@@ -251,8 +269,6 @@ color: black;
   position: relative;
   flex-direction: row;
 }
-
-
 
 .header {
   height: 100%;
@@ -324,14 +340,8 @@ Making header 'sticky' on scroll
 
 .stickyUlUpdate li {
   padding: 5px;
-  margin: 5px;
-  background: #fbfbfb;
-  border: 2px solid #555;
 }
 
-.stickyUlUpdate ul:first-child {
-  border-right: 2px solid #555;
-}
 
 .sticky + .content {
   padding-top: 102px;
@@ -420,11 +430,6 @@ Responsive styles
     flex-wrap: wrap;
   }
 
-
-  .socialLinks:hover  {
-    background-color: #555;
-  }
-
   .aboutMore {
     border-bottom: none;
   }
@@ -445,49 +450,9 @@ Responsive styles
   Media header styles
   */
 
-  .travel-slides, .travel-captions {
-    margin-left: 20rem;
-  }
-
-  .travel-slides {
-    width: 700px;
-  }
-
-  #topOfPage a:hover {
-    color:black;
-    padding: 2px;
-    background-color: white;
-    text-decoration: none;
-    border: 2px solid #555;
-  }
-
-  #topOfPage a {
-    transition: background-color, border 0.2s ease,
-    padding 0.2s linear;
-    background-color:inherit;
-    border: none;
-    color: white;
-  }
-
   .header {
     width: 650px;
   }
-
-  .sticky a {
-    background: inherit;
-    color: white;
-  }
-
-  .sticky a:hover {
-    padding: 10px;
-    background-color: #fbfbfb;
-    border-bottom: 3px solid #555;
-    text-decoration: none;
-    transition: background-color, border-bottom 0.2s ease,
-    padding 0.2s linear;
-    color: black;
-  }
-
 
   .sticky {
     flex-direction: row;
@@ -561,22 +526,9 @@ Responsive styles
     margin: 1rem;
   }
 
-  .sticky nav {
-    background-color: black;
-    margin-left: auto;
-    width: auto;
-    flex-wrap: wrap;
-    margin-top: -20px;
-    margin: 1rem;
-  }
-
   td {
     border: none;
     border-bottom: 5px solid black;
-  }
-
-  .travel-slides-ctn, .trave-slides-captions-ctn {
-    display: none;
   }
 
   tr {
@@ -627,6 +579,8 @@ Responsive styles
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (3000 - 300)));
   }
 }
+
+
 @media screen and (min-width: 1000px) {
   body {
     font-size: 22px;
