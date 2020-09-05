@@ -28,8 +28,12 @@ let stickHeader = () => {
 
     // Removes stick updates when at top of page Yoffset
     header.classList.remove("sticky");
-    nav.classList.remove("stickyUlUpdate");
-    
+    .classList.remove("stickyUlUpdate");
+
   }
 
+}
+
+let toggle = (x) =>{
+  x.classList.toggle("change");
 }
