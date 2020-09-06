@@ -136,8 +136,6 @@ background-image: url(images/paraxell/contact.jpg);
   background-attachment: fixed;
 }
 
-
-
 /**
 Div container styles
 */
@@ -264,16 +262,15 @@ Header Related layout styles
 Making header 'sticky' on scroll
 */
 .sticky {
+  height: 100px;
   background-image: none;
   background-color:rgba(120,120,120,1);
   position: fixed;
+  justify-content: space-evenly;
   width: 100%;
-  height: 230px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-
-
 
 .sticky a:hover {
   color:black;
@@ -294,9 +291,11 @@ Making header 'sticky' on scroll
 
 .sticky nav {
   background-color: black;
-  width: 700px;
-  height: auto;
+  width: auto;
+  margin-top: -20px;
 }
+
+
 
 .sticky div p {
   border-bottom: none;
@@ -429,39 +428,12 @@ Responsive styles
     height: 100px;
   }
 
-  .sticky nav {
-    background-color: black;
-    margin-left: auto;
-    width: auto;
-    margin-top: -20px;
-  }
-
   #topOfPage {
     font-size: 17pt;
     border-bottom: 3px solid black;
     display: flex;
     justify-content: center;
   }
-
-  .stickyUlUpdate {
-    display: flex;
-    font-size: 19pt;
-    flex-wrap: nowrap;
-    padding:15px;
-
-  }
-
-  .stickyUlUpdate li {
-    padding: 10px;
-    border: none;
-    background: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15pt;
-    padding:10px;
-    color: black;
-
-    }
 
   /**
   End of header media styles
@@ -476,63 +448,17 @@ Responsive styles
   }
 }
 
-/**
- For general
- section containers
-*/
-@media only screen and (max-width: 850px) {
-  /**
-  Sandwich menu styles
-  */
-  .inner-container {
-    display: inline-block;
-    cursor: pointer;
+@media only screen and (max-width: 1145px) {
+
+  #containerHeader {
+    display: none;
   }
 
-
-
-  .line1, .line2, .line3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-
-  .animate .line1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .animate .line2 {opacity: 0;}
-
-  .animate .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-
-
-  iframe {
-    width: 300px;
-  }
-  #slogan {
-    margin: 1rem;
-  }
-  .welcomeContainer {
-    border-bottom: none;
-    align-items: center;
-    align-self: center;
+  .sticky {
     justify-content: center;
   }
 
-  .welcomeContainer:last-child {
-    width: auto;
-  }
-
-
 }
-
-
 /**
  Table more responsive
  on small screens.
@@ -560,6 +486,43 @@ Responsive styles
   }
 
 }
+
+/**
+ For general
+ section containers
+*/
+@media only screen and (max-width: 850px) {
+  /**
+  Sandwich menu styles
+  */
+  .inner-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #background {
+    display: none;
+  }
+
+  iframe {
+    width: 300px;
+  }
+  #slogan {
+    margin: 1rem;
+  }
+  .welcomeContainer {
+    border-bottom: none;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .welcomeContainer:last-child {
+    width: auto;
+  }
+
+}
+
 
 /**
  Fluid

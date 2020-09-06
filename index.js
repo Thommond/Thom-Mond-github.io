@@ -28,7 +28,7 @@ let stickHeader = () => {
 
     // Removes stick updates when at top of page Yoffset
     header.classList.remove("sticky");
-    .classList.remove("stickyUlUpdate");
+    nav.classList.remove("stickyUlUpdate");
 
   }
 
