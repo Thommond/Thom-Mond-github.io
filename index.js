@@ -10,6 +10,8 @@ let captionsCtn = document.querySelector('.travel-slides-captions-ctn')
 // Creating elements for back to top link on sticky header
 let li = document.createElement("li");
 let a = document.createElement("a");
+let cont = document.querySelector('#containerHeader');
+let slog = document.querySelector('#slogan');
 
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
@@ -21,7 +23,6 @@ let stickHeader = () => {
     header.classList.add("sticky");
     nav.classList.add("stickyUlUpdate");
 
-
 }
 
    else {
@@ -32,8 +33,4 @@ let stickHeader = () => {
 
   }
 
-}
-
-let toggle = (x) =>{
-  x.classList.toggle("change");
 }

@@ -48,6 +48,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.projectImages:hover {
+  border: 3px solid black;
+  opacity: 0.8;
+}
+
 .socialContainer {
   display: flex;
   flex-direction: column;
@@ -89,16 +94,6 @@ a:hover {
   margin: 1rem;
 }
 
-#hobby {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-}
-
-
-
 /**
  Paraxell scrolling styles
  */
@@ -113,7 +108,10 @@ background-image: url(images/paraxell/canyonBig.jpg);
 
 #background3 {
 background-image:url(images/paraxell/coding.jpg);
+}
 
+#background35 {
+  background-image: url(images/paraxell/skill.jpg);
 }
 
 #background4 {
@@ -142,6 +140,7 @@ Div container styles
 
 .bigContain {
   display:flex;
+  color:white;
   flex-direction: column;
   border: 3px solid white;
   justify-content: center;
@@ -175,7 +174,14 @@ Div container styles
   width: 700px;
 }
 
-#interestCtn {
+#skillsCtn section ul li {
+  padding: 10px;
+}
+
+#skillsCtn section ul {
+  list-style-type: square;
+}
+#interestCtn, #skillsCtn {
   display: flex;
   flex-direction: column;
   border-bottom: none;
@@ -377,7 +383,6 @@ ul {
   padding: 5px;
 }
 
-
 /**
 Responsive styles
 */
@@ -399,18 +404,19 @@ Responsive styles
   }
 
   .aboutMore {
+    padding: 5px;
     border-bottom: none;
   }
 
-  #interestCtn {
+  #interestCtn, #skillsCtn {
     flex-direction: row;
   }
 
-  #facts {
+  #facts, #lang{
     border-right: 2px solid black;
   }
 
-  #fav {
+  #fav, #other, #workflow{
     border-left: 2px solid black;
   }
 
@@ -448,7 +454,11 @@ Responsive styles
   }
 }
 
-@media only screen and (max-width: 1145px) {
+@media only screen and (max-width: 1250px) {
+
+  #slogan  {
+    display: none;
+  }
 
   #containerHeader {
     display: none;
@@ -464,12 +474,6 @@ Responsive styles
  on small screens.
 */
 @media only screen and (max-width: 930px) {
-
-  .projectImages:hover {
-    border: 3px solid black;
-    opacity: 0.8;
-  }
-
 
   .responsive-td {
     display: none;
@@ -492,9 +496,7 @@ Responsive styles
  section containers
 */
 @media only screen and (max-width: 850px) {
-  /**
-  Sandwich menu styles
-  */
+
   .inner-container {
     display: inline-block;
     cursor: pointer;
@@ -507,9 +509,7 @@ Responsive styles
   iframe {
     width: 300px;
   }
-  #slogan {
-    margin: 1rem;
-  }
+
   .welcomeContainer {
     border-bottom: none;
     align-items: center;
@@ -521,6 +521,13 @@ Responsive styles
     width: auto;
   }
 
+}
+
+@media only screen and (max-width: 640px) {
+  .sticky ul {
+    flex-wrap: wrap;
+    font-size: 15pt;
+  }
 }
 
 
