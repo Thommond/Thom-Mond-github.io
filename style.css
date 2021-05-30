@@ -366,7 +366,6 @@ section {
   position: relative;
   flex-direction: column;
   background-color: white;
-  border-bottom: 3px solid black;
   margin: 10px;
 }
 
