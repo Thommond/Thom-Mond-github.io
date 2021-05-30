@@ -115,10 +115,6 @@ background-image:url(images/paraxell/coding.jpg);
 }
 
 #background4 {
-background-image: url(images/paraxell/canyonBig.jpg);
-}
-
-#background5{
 background-image: url(images/paraxell/contact.jpg);
 }
 
@@ -181,7 +177,7 @@ Div container styles
 #skillsCtn section ul {
   list-style-type: square;
 }
-#interestCtn, #skillsCtn {
+#skillsCtn {
   display: flex;
   flex-direction: column;
   border-bottom: none;
@@ -403,20 +399,15 @@ Responsive styles
   background-image: url(images/paraxell/welcome.jpg);
   }
 
-  .aboutMore {
-    padding: 5px;
-    border-bottom: none;
-  }
-
   #interestCtn, #skillsCtn {
     flex-direction: row;
   }
 
-  #facts, #lang{
+  #lang{
     border-right: 2px solid black;
   }
 
-  #fav, #other, #workflow{
+   #other, #workflow{
     border-left: 2px solid black;
   }
 
