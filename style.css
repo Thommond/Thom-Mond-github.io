@@ -316,6 +316,9 @@ Making header 'sticky' on scroll
   padding: 5px;
 }
 
+.techStack {
+  list-style: disc;
+}
 
 .sticky + .content {
   padding-top: 102px;
@@ -374,7 +377,7 @@ ul {
 }
 
  td {
-  border: 5px solid black;
+  border-bottom: 5px solid black;
   padding: 5px;
 }
 
@@ -490,6 +493,10 @@ Responsive styles
   .inner-container {
     display: inline-block;
     cursor: pointer;
+  }
+
+  .headings {
+    display: none;
   }
 
   #background {
