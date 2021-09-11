@@ -6,7 +6,9 @@ html {
   box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -20,8 +22,12 @@ body {
   max-width: 1400px;
 }
 
-
-h1, h2, h3, h4, h5, li {
+h1,
+h2,
+h3,
+h4,
+h5,
+li {
   font-family: Be Vietnam;
 }
 
@@ -34,14 +40,13 @@ Layout
 */
 
 a {
-text-decoration: none;
-color:green;
+  text-decoration: none;
+  color: green;
 }
 
 #topOfPage p {
   margin: 1rem;
 }
-
 
 a:hover {
   color: purple;
@@ -64,7 +69,7 @@ a:hover {
   height: 230px;
   margin: 3px;
   border: 1px solid black;
-  transition:border 3s;
+  transition: border 3s;
 }
 
 .firstContainWelcome {
@@ -87,7 +92,7 @@ a:hover {
 }
 
 #profileImage {
-  width: 300px;
+  width: 250px;
   height: 300px;
   border-radius: 25%;
   border: 2px solid #555;
@@ -99,15 +104,15 @@ a:hover {
  */
 
 #background {
-background-image: url(images/paraxell/hello.jpg);
+  background-image: url(images/paraxell/hello.jpg);
 }
 
 #background2 {
-background-image: url(images/paraxell/canyonBig.jpg);
+  background-image: url(images/paraxell/canyonBig.jpg);
 }
 
 #background3 {
-background-image:url(images/paraxell/coding.jpg);
+  background-image: url(images/paraxell/coding.jpg);
 }
 
 #background35 {
@@ -115,7 +120,7 @@ background-image:url(images/paraxell/coding.jpg);
 }
 
 #background4 {
-background-image: url(images/paraxell/contact.jpg);
+  background-image: url(images/paraxell/contact.jpg);
 }
 
 .paraxell {
@@ -135,8 +140,8 @@ Div container styles
 */
 
 .bigContain {
-  display:flex;
-  color:white;
+  display: flex;
+  color: white;
   flex-direction: column;
   border: 3px solid white;
   justify-content: center;
@@ -191,12 +196,10 @@ Div container styles
   padding: 1rem;
 }
 
-
-.socialLinks:hover  {
-    color: white;
-    text-decoration: none;
+.socialLinks:hover {
+  color: white;
+  text-decoration: none;
 }
-
 
 footer {
   background: white;
@@ -209,14 +212,14 @@ form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: #fbfbfb
+  background: #fbfbfb;
 }
 
 /**
 Header Related layout styles
 */
 #topOfPage a:hover {
-  color:black;
+  color: black;
   padding: 2px;
   background-color: white;
   text-decoration: none;
@@ -224,9 +227,8 @@ Header Related layout styles
 }
 
 #topOfPage a {
-  transition: background-color, border 0.2s ease,
-  padding 0.2s linear;
-  background-color:inherit;
+  transition: background-color, border 0.2s ease, padding 0.2s linear;
+  background-color: inherit;
   border: none;
   color: white;
 }
@@ -237,7 +239,7 @@ Header Related layout styles
   height: 650px;
   width: 100%;
   display: flex;
-  margin:auto;
+  margin: auto;
   z-index: 1;
   position: relative;
   flex-direction: row;
@@ -246,7 +248,7 @@ Header Related layout styles
 .header {
   height: 100%;
   padding: 10px 16px;
-  background-color:rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #f1f1f1;
   top: 0;
 }
@@ -266,7 +268,7 @@ Making header 'sticky' on scroll
 .sticky {
   height: 100px;
   background-image: none;
-  background-color:rgba(120,120,120,1);
+  background-color: rgba(120, 120, 120, 1);
   position: fixed;
   justify-content: space-evenly;
   width: 100%;
@@ -275,13 +277,13 @@ Making header 'sticky' on scroll
 }
 
 .sticky a:hover {
-  color:black;
+  color: black;
   background-color: white;
   text-decoration: underline;
 }
 
 .sticky a {
-  background-color:white;
+  background-color: white;
   border: none;
   color: black;
 }
@@ -297,8 +299,6 @@ Making header 'sticky' on scroll
   margin-top: -20px;
 }
 
-
-
 .sticky div p {
   border-bottom: none;
 }
@@ -307,9 +307,8 @@ Making header 'sticky' on scroll
   display: flex;
   flex-wrap: wrap;
   font-size: 15pt;
-  padding:10px;
+  padding: 10px;
   color: black;
-
 }
 
 .stickyUlUpdate li {
@@ -325,8 +324,8 @@ Making header 'sticky' on scroll
 }
 
 .sticky h1 {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   height: 38px;
 }
 
@@ -346,8 +345,8 @@ iframe {
 }
 
 .socialLinks img {
- width: 40px;
- height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 p {
@@ -376,7 +375,7 @@ ul {
   list-style: none;
 }
 
- td {
+td {
   border-bottom: 5px solid black;
   padding: 5px;
 }
@@ -385,31 +384,32 @@ ul {
 Responsive styles
 */
 @media only screen and (min-width: 1480px) {
-
   iframe {
     width: 1000px;
   }
 
   .firstContainWelcome {
     flex-direction: row;
-    align-content:center;
+    align-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
 
   #background {
-  background-image: url(images/paraxell/welcome.jpg);
+    background-image: url(images/paraxell/welcome.jpg);
   }
 
-  #interestCtn, #skillsCtn {
+  #interestCtn,
+  #skillsCtn {
     flex-direction: row;
   }
 
-  #lang{
+  #lang {
     border-right: 2px solid black;
   }
 
-   #other, #workflow{
+  #other,
+  #workflow {
     border-left: 2px solid black;
   }
 
@@ -439,17 +439,16 @@ Responsive styles
   */
 
   #theWorks p {
-      max-width: 500px;
+    max-width: 500px;
   }
 
   #welcome p {
-      max-width: 700px;
+    max-width: 700px;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-
-  #slogan  {
+  #slogan {
     display: none;
   }
 
@@ -460,14 +459,12 @@ Responsive styles
   .sticky {
     justify-content: center;
   }
-
 }
 /**
  Table more responsive
  on small screens.
 */
 @media only screen and (max-width: 930px) {
-
   .responsive-td {
     display: none;
   }
@@ -481,7 +478,6 @@ Responsive styles
     display: flex;
     flex-direction: column;
   }
-
 }
 
 /**
@@ -489,7 +485,6 @@ Responsive styles
  section containers
 */
 @media only screen and (max-width: 850px) {
-
   .inner-container {
     display: inline-block;
     cursor: pointer;
@@ -517,7 +512,6 @@ Responsive styles
   .welcomeContainer:last-child {
     width: auto;
   }
-
 }
 
 @media only screen and (max-width: 640px) {
@@ -526,7 +520,6 @@ Responsive styles
     font-size: 15pt;
   }
 }
-
 
 /**
  Fluid
@@ -537,7 +530,6 @@ Responsive styles
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (3000 - 300)));
   }
 }
-
 
 @media screen and (min-width: 1000px) {
   body {
