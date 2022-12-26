@@ -1,6 +1,6 @@
 # Thom-Mond-github.io
 
-This is the professional website of Thomas Mondeaux.
+This is the `discontinued` programming professional website of Thomas M.
 
 ## Contents
 
@@ -17,3 +17,5 @@ a bit more about me like hobbies, clubs and basic traits.
 I have a few links for my Github and Deployed projects, as well
 as my social links like linkedin and others. The best way to get
 in contact with me is through email.
+
+
